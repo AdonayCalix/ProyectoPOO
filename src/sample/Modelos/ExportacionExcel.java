@@ -14,6 +14,7 @@ import java.util.Iterator;
 public class ExportacionExcel {
     public static ArrayList<OfertaAcademica> clases = new ArrayList<OfertaAcademica>();
     private static String nombreArchivo = "REGPS101_EXT_2854.xlsx";
+    private static String nombreArchivo2 = "REGPS101_EXT_2854.xlsx";
     private static String rutaArchivo = "/home/adonay-calix/Documentos/OfertaAcadenica/" + nombreArchivo;
     private static int contadorFila = 0;
     private final static int inicioFila = 6;
@@ -47,11 +48,7 @@ public class ExportacionExcel {
 
                             switch (cell.getCellType()) {
                                 case Cell.CELL_TYPE_NUMERIC:
-                                    if (DateUtil.isCellDateFormatted(cell)) {
-                                        System.out.print(cell.getDateCellValue() + "  ");
-                                    } else {
-                                        System.out.print(cell.getNumericCellValue() + "  ");
-                                    }
+                                    System.out.print(cell.getNumericCellValue() + "  ");
                                     break;
                                 case Cell.CELL_TYPE_STRING:
                                     System.out.print(cell.getStringCellValue() + "  ");
@@ -60,52 +57,7 @@ public class ExportacionExcel {
 
                         }
 
-                        switch (contadorColumnas) {
-
-                            case 0:
-                                cargaAcademica.setCodigoClase(cell.getStringCellValue());
-                                break;
-                            case 1:
-                                cargaAcademica.setNombreClase(cell.getStringCellValue());
-                                break;
-                            case 2:
-                                cargaAcademica.setCreditos((int) cell.getNumericCellValue());
-                                break;
-                            case 3:
-                                cargaAcademica.setSeccion(cell.getStringCellValue());
-                                break;
-                            case 6:
-                                cargaAcademica.setHoraInicio((int) cell.getNumericCellValue());
-                                break;
-                            case 7:
-                                cargaAcademica.setHoraFinal((int) cell.getNumericCellValue());
-                                break;
-                            case 8:
-                                cargaAcademica.setLunes(cell.getStringCellValue());
-                                break;
-                            case 9:
-                                cargaAcademica.setMartes(cell.getStringCellValue());
-                                break;
-                            case 10:
-                                cargaAcademica.setMiercoles(cell.getStringCellValue());
-                                break;
-                            case 11:
-                                cargaAcademica.setJueves(cell.getStringCellValue());
-                                break;
-                            case 12:
-                                cargaAcademica.setViernes(cell.getStringCellValue());
-                                break;
-                            case 13:
-                                cargaAcademica.setSabado(cell.getStringCellValue());
-                                break;
-
-                            case 16:
-                                cargaAcademica.setCupo((int) cell.getNumericCellValue());
-                                break;
-
-                        }
                     }
-                    clases.add(cargaAcademica);
 
                     contadorColumnas++;
                 }
