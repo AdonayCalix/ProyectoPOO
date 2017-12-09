@@ -14,7 +14,7 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("Vistas/pantallaDos.fxml"));
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 459, 358));
         primaryStage.show();
     }
 
