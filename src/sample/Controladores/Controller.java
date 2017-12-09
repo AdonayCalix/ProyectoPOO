@@ -21,8 +21,14 @@ public class Controller {
         List<File> archivos = fileChooser.showOpenMultipleDialog(null);
         if (archivos != null) {
             for (int i = 0; i < archivos.size(); i++) {
-                listInformativo.getItems().addAll(archivos.get(i).getAbsoluteFile());
+                listInformativo.getItems().addAll(archivos.get(i).getName());
             }
         }
+
+        btnAceptar.setVisible(true);
+    }
+
+    public void bye(ActionEvent actionEvent) {
+        System.exit(0);
     }
 }

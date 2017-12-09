@@ -18,6 +18,6 @@
         </Button>
         <ListView fx:id="listInformativo" layoutX="18.0" layoutY="53.0" prefHeight="288.0" prefWidth="251.0"/>
         <Button fx:id="btnAceptar" layoutX="288.0" layoutY="315.0" mnemonicParsing="false" prefHeight="26.0"
-                prefWidth="97.0" text="Aceptar" visible="false"/>
+                prefWidth="97.0" text="Aceptar" visible="false" onAction="#bye"/>
     </children>
 </AnchorPane>
