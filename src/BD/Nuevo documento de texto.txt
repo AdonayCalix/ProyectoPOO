@@ -1,0 +1,5 @@
+CAMBIOS EN LA BD
+
+- Las tablas Aula y tipo de aula, ya estan llenas con los datos reales.
+- el tipo de datos de la columna estado de la tabla Aula cambio de bit, a boolean.
+- hay dos laboratorios de neumatica uno en el edificio 4 y otro en el edificio 3, en el 4 el codigo del lab es LBNE y en el edificio 3 es LBN3
