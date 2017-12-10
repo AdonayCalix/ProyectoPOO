@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 public class Main extends Application {
 
-    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/world";
+    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/proyecto";
     public String USUARIO = "root";
     public String PASSWORD = "la que tengan";
     private static Connection conexion;
@@ -25,7 +25,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        abrirConexion();
         Parent root = FXMLLoader.load(getClass().getResource("Vistas/pantallaDos.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 459, 358));
