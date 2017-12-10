@@ -16,6 +16,7 @@ public class ImportacionDatos {
     public void insertarClases() {
         for (int i = 0; i < getClases().size(); i++) {
 
+
         }
     }
 
