@@ -3,11 +3,7 @@ package sample.Controladores;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-import javafx.stage.FileChooser;
-import sample.Modelos.SeleccionArchivo;
-
-import java.io.File;
-import java.util.List;
+import sample.Modelos.ExportacionExcel;
 
 public class Controller {
 
@@ -16,16 +12,7 @@ public class Controller {
     public ListView listInformativo;
 
     public void escogerArchivos(ActionEvent actionEvent) {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("XLSX", "*.xlsx"));
-        List<File> archivos = fileChooser.showOpenMultipleDialog(null);
-        if (archivos != null) {
-            for (int i = 0; i < archivos.size(); i++) {
-                listInformativo.getItems().addAll(archivos.get(i).getName());
-            }
-        }
-
-        btnAceptar.setVisible(true);
+        ExportacionExcel.leerDatos();
     }
 
     public void bye(ActionEvent actionEvent) {
