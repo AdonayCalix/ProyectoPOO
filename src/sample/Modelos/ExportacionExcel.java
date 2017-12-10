@@ -19,8 +19,7 @@ public class ExportacionExcel {
     private final static int maximoColumna = 16;
 
     public static void leerDatos() {
-        System.out.println("--------------------------------------------------------------------------------------------------------------------------");
-        System.out.println();
+
         List<File> archivos = SeleccionArchivo.seleccionarArchivos();
         for (int i = 0; i < archivos.size(); i++) {
 
@@ -114,4 +113,9 @@ public class ExportacionExcel {
             }
         }
     }
+
+    public static ArrayList<OfertaAcademica> getClases() {
+        return clases;
+    }
+
 }
