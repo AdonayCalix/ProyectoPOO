@@ -1,0 +1,52 @@
+CAMBIOS EN LA BD
+
+- Las tablas Aula y tipo de aula, ya estan llenas con los datos reales.
+- el tipo de datos de la columna estado de la tabla Aula cambio de bit, a boolean.
+- hay dos laboratorios de neumatica uno en el edificio 4 y otro en el edificio 3, en el 4 el codigo del lab es LBNE y en el edificio 3 es LBN3
+
+
+
+switch (contadorColumnas) {
+
+                            case 0:
+                                cargaAcademica.setCodigoClase(cell.getStringCellValue());
+                                break;
+                            case 1:
+                                cargaAcademica.setNombreClase(cell.getStringCellValue());
+                                break;
+                            case 2:
+                                cargaAcademica.setCreditos((int) cell.getNumericCellValue());
+                                break;
+                            case 3:
+                                cargaAcademica.setSeccion(cell.getStringCellValue());
+                                break;
+                            case 6:
+                                cargaAcademica.setHoraInicio((int) cell.getNumericCellValue());
+                                break;
+                            case 7:
+                                cargaAcademica.setHoraFinal((int) cell.getNumericCellValue());
+                                break;
+                            case 8:
+                                cargaAcademica.setLunes(cell.getStringCellValue());
+                                break;
+                            case 9:
+                                cargaAcademica.setMartes(cell.getStringCellValue());
+                                break;
+                            case 10:
+                                cargaAcademica.setMiercoles(cell.getStringCellValue());
+                                break;
+                            case 11:
+                                cargaAcademica.setJueves(cell.getStringCellValue());
+                                break;
+                            case 12:
+                                cargaAcademica.setViernes(cell.getStringCellValue());
+                                break;
+                            case 13:
+                                cargaAcademica.setSabado(cell.getStringCellValue());
+                                break;
+
+                            case 16:
+                                cargaAcademica.setCupo((int) cell.getNumericCellValue());
+                                break;
+
+                        }
