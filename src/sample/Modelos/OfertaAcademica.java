@@ -6,8 +6,8 @@ public class OfertaAcademica {
     private String nombreClase;
     private int creditos;
     private String seccion;
-    private int horaInicio;
-    private int horaFinal;
+    private String horaInicio;
+    private String horaFinal;
     private String lunes;
     private String martes;
     private String miercoles;
@@ -15,14 +15,6 @@ public class OfertaAcademica {
     private String viernes;
     private String sabado;
     private int cupo;
-
-    public int getCupo() {
-        return cupo;
-    }
-
-    public void setCupo(int cupo) {
-        this.cupo = cupo;
-    }
 
     public String getCodigoClase() {
         return codigoClase;
@@ -56,19 +48,19 @@ public class OfertaAcademica {
         this.seccion = seccion;
     }
 
-    public int getHoraInicio() {
+    public String getHoraInicio() {
         return horaInicio;
     }
 
-    public void setHoraInicio(int horaInicio) {
+    public void setHoraInicio(String horaInicio) {
         this.horaInicio = horaInicio;
     }
 
-    public int getHoraFinal() {
+    public String getHoraFinal() {
         return horaFinal;
     }
 
-    public void setHoraFinal(int horaFinal) {
+    public void setHoraFinal(String horaFinal) {
         this.horaFinal = horaFinal;
     }
 
@@ -118,5 +110,13 @@ public class OfertaAcademica {
 
     public void setSabado(String sabado) {
         this.sabado = sabado;
+    }
+
+    public int getCupo() {
+        return cupo;
+    }
+
+    public void setCupo(int cupo) {
+        this.cupo = cupo;
     }
 }
