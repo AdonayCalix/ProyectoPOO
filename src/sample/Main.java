@@ -5,19 +5,40 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import javax.swing.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 //489, 328
 
 public class Main extends Application {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
+    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/world";
+    public String USUARIO = "root";
+    public String PASSWORD = "la que tengan";
+    private static Connection conexion;
 
+    public static Connection getConexion() {
+        return conexion;
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        abrirConexion();
         Parent root = FXMLLoader.load(getClass().getResource("Vistas/pantallaDos.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 459, 358));
         primaryStage.show();
     }
 
+    public void abrirConexion() {
+        try {
+            conexion = DriverManager.getConnection(CONEXION_STRING, USUARIO, PASSWORD);
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "La conexion no se realizo exitosamente: " + e.getMessage());
+        }
+    }
 
     public static void main(String[] args) {
         launch(args);
