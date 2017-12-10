@@ -11,7 +11,7 @@ la segunda en Mayuscula.
 3. Ser lo mas ordenado posible con el codigo (Hacer format al codigo).
 4. Crear en lo posible codiglo reutilizable.
 5. Evitar hacer cambios que afecten el proyecto.
-6. El colaborador Juan hizo un aporte pero el repositorio anterior <https://github.com/AdonayCalix/PROYECT-FOJJ/graphs/contributors>
+6. El colaborador Juan hizo un aportes pero en el repositorio anterior <https://github.com/AdonayCalix/PROYECT-FOJJ/graphs/contributors> 
 
 **--------------------------------------------------------------------------------------------------------------------------------------------------------------------**
 
