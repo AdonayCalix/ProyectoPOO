@@ -14,9 +14,9 @@ import java.sql.SQLException;
 
 public class Main extends Application {
 
-    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/world";
+    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/proyecto";
     public String USUARIO = "root";
-    public String PASSWORD = "la que tengan";
+    public String PASSWORD = "";
     private static Connection conexion;
 
     public static Connection getConexion() {
@@ -38,6 +38,8 @@ public class Main extends Application {
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "La conexion no se realizo exitosamente: " + e.getMessage());
         }
+        JOptionPane.showMessageDialog(null, "Conexion exitosa");
+
     }
 
     public static void main(String[] args) {
