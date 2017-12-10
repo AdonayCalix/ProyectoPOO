@@ -14,14 +14,9 @@ import java.sql.SQLException;
 
 public class Main extends Application {
 
-    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/world";
-    public String USUARIO = "root";
-    public String PASSWORD = "la que tengan";
     private static Connection conexion;
 
-    public static Connection getConexion() {
-        return conexion;
-    }
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -32,12 +27,16 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public void abrirConexion() {
+    public static void abrirConexion() {
         try {
-            conexion = DriverManager.getConnection(CONEXION_STRING, USUARIO, PASSWORD);
+            conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/proyectopoo","root","");
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "La conexion no se realizo exitosamente: " + e.getMessage());
         }
+    }
+
+    public static Connection getConexion() {
+        return conexion;
     }
 
     public static void main(String[] args) {
