@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import sample.Modelos.ImportacionDatos;
 
 import javax.swing.*;
 import java.sql.Connection;
@@ -25,6 +26,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        abrirConexion();
         Parent root = FXMLLoader.load(getClass().getResource("Vistas/pantallaDos.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 459, 358));
