@@ -10,115 +10,69 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class ExportacionExcel {
-    public static ArrayList<OfertaAcademica> clases = new ArrayList<OfertaAcademica>();
-    private static String nombreArchivo = "REGPS101_EXT_2854.xlsx";
-    private static String rutaArchivo = "/home/adonay-calix/Documentos/OfertaAcadenica/" + nombreArchivo;
+
     private static int contadorFila = 0;
     private final static int inicioFila = 6;
     private final static int maximoColumna = 16;
 
     public static void leerDatos() {
-        try {
-            FileInputStream archivoExel = new FileInputStream(new File(rutaArchivo));
-            XSSFWorkbook worbook = new XSSFWorkbook(archivoExel);
-            XSSFSheet sheet = worbook.getSheetAt(0);
-            Iterator<Row> rowIterator = sheet.iterator();
-            Row row;
 
-            while (rowIterator.hasNext()) {
+        List<File> archivos = SeleccionArchivo.seleccionarArchivos();
+        for (int i = 0; i < archivos.size(); i++) {
+            try {
+                contadorFila = 0;
+                FileInputStream archivoExel = new FileInputStream(new File(String.valueOf(archivos.get(i).getAbsoluteFile())));
+                XSSFWorkbook worbook = new XSSFWorkbook(archivoExel);
+                XSSFSheet sheet = worbook.getSheetAt(0);
+                Iterator<Row> rowIterator = sheet.iterator();
+                Row row;
 
-                row = rowIterator.next();
-                Iterator<Cell> cellIterator = row.cellIterator();
-                Cell cell;
+                while (rowIterator.hasNext()) {
 
-                int contadorColumnas = 0;
+                    row = rowIterator.next();
+                    Iterator<Cell> cellIterator = row.cellIterator();
+                    Cell cell;
 
-                OfertaAcademica cargaAcademica = new OfertaAcademica();
+                    int contadorColumnas = 0;
 
-                while (cellIterator.hasNext()) {
+                    OfertaAcademica cargaAcademica = new OfertaAcademica();
 
-                    cell = cellIterator.next();
+                    while (cellIterator.hasNext()) {
 
-                    if (contadorFila >= inicioFila && contadorColumnas <= maximoColumna) {
+                        cell = cellIterator.next();
 
-                        if (!(contadorColumnas == 15 || contadorColumnas == 14 || contadorColumnas == 4 || contadorColumnas == 5)) {
+                        if (contadorFila >= inicioFila && contadorColumnas <= maximoColumna) {
 
-                            switch (cell.getCellType()) {
-                                case Cell.CELL_TYPE_NUMERIC:
-                                    if (DateUtil.isCellDateFormatted(cell)) {
-                                        System.out.print(cell.getDateCellValue() + "  ");
-                                    } else {
+                            if (!(contadorColumnas == 15 || contadorColumnas == 14 || contadorColumnas == 4 || contadorColumnas == 5)) {
+
+                                switch (cell.getCellType()) {
+                                    case Cell.CELL_TYPE_NUMERIC:
                                         System.out.print(cell.getNumericCellValue() + "  ");
-                                    }
-                                    break;
-                                case Cell.CELL_TYPE_STRING:
-                                    System.out.print(cell.getStringCellValue() + "  ");
-                                    break;
+                                        break;
+                                    case Cell.CELL_TYPE_STRING:
+                                        System.out.print(cell.getStringCellValue() + "  ");
+                                        break;
+                                }
                             }
-
                         }
-
-                        switch (contadorColumnas) {
-
-                            case 0:
-                                cargaAcademica.setCodigoClase(cell.getStringCellValue());
-                                break;
-                            case 1:
-                                cargaAcademica.setNombreClase(cell.getStringCellValue());
-                                break;
-                            case 2:
-                                cargaAcademica.setCreditos((int) cell.getNumericCellValue());
-                                break;
-                            case 3:
-                                cargaAcademica.setSeccion(cell.getStringCellValue());
-                                break;
-                            case 6:
-                                cargaAcademica.setHoraInicio((int) cell.getNumericCellValue());
-                                break;
-                            case 7:
-                                cargaAcademica.setHoraFinal((int) cell.getNumericCellValue());
-                                break;
-                            case 8:
-                                cargaAcademica.setLunes(cell.getStringCellValue());
-                                break;
-                            case 9:
-                                cargaAcademica.setMartes(cell.getStringCellValue());
-                                break;
-                            case 10:
-                                cargaAcademica.setMiercoles(cell.getStringCellValue());
-                                break;
-                            case 11:
-                                cargaAcademica.setJueves(cell.getStringCellValue());
-                                break;
-                            case 12:
-                                cargaAcademica.setViernes(cell.getStringCellValue());
-                                break;
-                            case 13:
-                                cargaAcademica.setSabado(cell.getStringCellValue());
-                                break;
-
-                            case 16:
-                                cargaAcademica.setCupo((int) cell.getNumericCellValue());
-                                break;
-
-                        }
+                        contadorColumnas++;
                     }
-                    clases.add(cargaAcademica);
+                    if (contadorFila >= 6) {
+                        System.out.println();
+                    }
+                    contadorFila++;
+                }
 
-                    contadorColumnas++;
-                }
-                if (contadorFila >= 6) {
-                    System.out.println();
-                }
-                contadorFila++;
+                System.out.println("--------------------------------------------------------------------------------------------------------------------------");
+                System.out.println();
+                System.out.println("--------------------------------------------------------------------------------------------------------------------------");
+
+            } catch (Exception e) {
+                e.getMessage();
             }
-
-        } catch (Exception e) {
-            e.getMessage();
         }
-
     }
-
 }
