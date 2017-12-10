@@ -34,20 +34,19 @@ public class ImportacionDatos {
                     e.printStackTrace();
                 }
             }
-
         }
     }
 
 
     public int asignarAula(String nombreClase) {
         int idAula = 1;
-
+        System.gc();
         try {
             Connection con = Main.getConexion();
             Statement statement = con.createStatement();
             String sql = "SELECT idTipo FROM tipo_aula WHERE tipo = '" + nombreClase + "'";
             ResultSet resultSet = statement.executeQuery(sql);
-            if (!(resultSet.next())) {
+            if (resultSet.wasNull()) {
                 idAula = resultSet.getInt("idTipo");
             }
             resultSet.close();
