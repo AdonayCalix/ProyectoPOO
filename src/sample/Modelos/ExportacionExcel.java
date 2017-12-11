@@ -102,16 +102,13 @@ public class ExportacionExcel {
                     contadorFila++;
                 }
 
-                for (int j = 0; j < clases.size(); j++) {
-
-                    System.out.println(clases.get(j).getCodigoClase() + " " + clases.get(j).getNombreClase() + " " + clases.get(j).getCreditos()
-                            + " " + clases.get(j).getSeccion() + " " + clases.get(j).getHoraInicio() + " " + clases.get(j).getHoraFinal() + " " + clases.get(j).getCupo());
-                }
-
             } catch (Exception e) {
                 e.getMessage();
             }
         }
+
+        ImportacionDatos importar = new ImportacionDatos();
+        importar.insertarClases();
     }
 
     public static ArrayList<OfertaAcademica> getClases() {
