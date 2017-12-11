@@ -2,7 +2,7 @@ package sample.Modelos;
 
 public class OfertaAcademica {
 
-    public String codigoClase;
+    private String codigoClase;
     private String nombreClase;
     private int creditos;
     private String seccion;
