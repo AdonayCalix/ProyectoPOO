@@ -45,6 +45,7 @@ public class ImportacionDatos {
         int idAula = 1;
         System.gc();
         try {
+
             Connection con = Main.getConexion();
             Statement statement = con.createStatement();
             String sql = "SELECT idTipo FROM tipo_aula WHERE tipo = '" + nombreClase + "'";
