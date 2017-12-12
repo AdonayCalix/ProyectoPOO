@@ -13,6 +13,7 @@ public class ImportacionDatos {
         String nombreClase;
         String codigoClase;
 
+
         for (int i = 0; i < clases.size(); i++) {
 
             nombreClase = clases.get(i).getNombreClase();
@@ -39,9 +40,13 @@ public class ImportacionDatos {
 
 
     public int asignarAula(String nombreClase) {
+
+        ArrayList<TipoAula> aulas = new ArrayList<TipoAula>();
+
         int idAula = 1;
         System.gc();
         try {
+
             Connection con = Main.getConexion();
             Statement statement = con.createStatement();
             String sql = "SELECT idTipo FROM tipo_aula WHERE tipo = '" + nombreClase + "'";
