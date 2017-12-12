@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="780fb778-7318-4e57-a5e5-19345cd41f88" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Modelos/TipoAula.java" afterPath="$PROJECT_DIR$/src/sample/Modelos/TipoAula.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -400,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513061957437</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Agrege un metodo para verificar si la clase pertenece a ICC y asignarle los laboratorios para impartir sus clases">
+      <created>1513061976864</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513061976864</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
