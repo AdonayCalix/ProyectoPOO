@@ -1,18 +1,22 @@
 package sample.Modelos;
 
+import org.apache.poi.ss.formula.functions.T;
 import sample.Main;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ImportacionDatos {
     private ArrayList<OfertaAcademica> clases = (ArrayList<OfertaAcademica>) ExportacionExcel.getClases().clone();
+
+    private ArrayList<TipoAula> informacionAulas = new ArrayList<TipoAula>();
 
     public void insertarClases() {
 
         String nombreClase;
         String codigoClase;
-
 
         for (int i = 0; i < clases.size(); i++) {
 
@@ -28,7 +32,7 @@ public class ImportacionDatos {
                     sentencia.setString(1, clases.get(i).getCodigoClase());
                     sentencia.setString(2, clases.get(i).getNombreClase());
                     sentencia.setInt(3, clases.get(i).getCreditos());
-                    sentencia.setInt(4, asignarAula(nombreClase));
+                    sentencia.setInt(4, 0);
                     sentencia.executeUpdate();
 
                 } catch (SQLException e) {
@@ -38,31 +42,6 @@ public class ImportacionDatos {
         }
     }
 
-
-    public int asignarAula(String nombreClase) {
-
-        ArrayList<TipoAula> aulas = new ArrayList<TipoAula>();
-
-        int idAula = 1;
-        System.gc();
-        try {
-
-            Connection con = Main.getConexion();
-            Statement statement = con.createStatement();
-            String sql = "SELECT idTipo FROM tipo_aula WHERE tipo = '" + nombreClase + "'";
-            ResultSet resultSet = statement.executeQuery(sql);
-            if (resultSet.wasNull()) {
-                idAula = resultSet.getInt("idTipo");
-            }
-            resultSet.close();
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return idAula;
-
-    }
 
     public boolean comprobarClasesExistente(String codigoClase) {
         boolean verificacion = false;
@@ -75,13 +54,35 @@ public class ImportacionDatos {
                 verificacion = true;
             }
             resultSet.close();
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return verificacion;
+    }
 
+    public void asignarValores() {
+
+        try {
+            Connection con = Main.getConexion();
+            Statement statement = con.createStatement();
+            String sql = "SELECT idTipo, tipo FROM tipo_aula";
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()) {
+                TipoAula aula = new TipoAula();
+                aula.setIdTipo(resultSet.getInt("idTipo"));
+                aula.setTipo(resultSet.getString("tipo"));
+                informacionAulas.add(aula);
+            }
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean aulaICC(String codigoClase) {
+        Pattern pattern = Pattern.compile("^IF");
+        Matcher matcher = pattern.matcher(codigoClase);
+        return matcher.matches();
     }
 
 }
