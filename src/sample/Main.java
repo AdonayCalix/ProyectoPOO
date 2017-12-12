@@ -15,9 +15,9 @@ import java.sql.SQLException;
 
 public class Main extends Application {
 
-    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/proyecto";
+    public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/proyectopoo";
     public String USUARIO = "root";
-    public String PASSWORD = "mooseladra";
+    public String PASSWORD = "";
     private static Connection conexion;
 
     public static Connection getConexion() {
