@@ -1,46 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="780fb778-7318-4e57-a5e5-19345cd41f88" name="Default" comment="">
+    <list default="true" id="780fb778-7318-4e57-a5e5-19345cd41f88" name="Default" comment="Listo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/ProyectoPOO.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/agregarle comentarios a las lineas de codigo.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/nuevaBD/nuevaBD.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/Controladores/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/Modelos/ExportacionExcel.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/Modelos/ImportacionDatos.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/Modelos/OfertaAcademica.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/Modelos/SeleccionArchivo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/Vistas/pantallaDos.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/libs/commons-collections4-4.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/libs/mysql-connector-java-5.1.44-bin.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/libs/poi-3.16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/libs/poi-ooxml-3.16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/libs/poi-ooxml-schemas-3.16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/out/production/ProyectoPOO/sample/libs/xmlbeans-2.6.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/Controladores/Controller.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/Modelos/ExportacionExcel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/Modelos/ImportacionDatos.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/Modelos/OfertaAcademica.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/Modelos/SeleccionArchivo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/Vistas/pantallaDos.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/libs/commons-collections4-4.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/libs/mysql-connector-java-5.1.44-bin.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/libs/poi-3.16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/libs/poi-ooxml-3.16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/libs/poi-ooxml-schemas-3.16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/src/sample/libs/xmlbeans-2.6.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/trabajo de programacion leer datos en exel/bin/com/ecodeup/ficherosexcel/CrearFicherosExcel.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/trabajo de programacion leer datos en exel/bin/com/ecodeup/ficherosexcel/LeerFicherosExcel.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/trabajo de programacion leer datos en exel/src/com/ecodeup/ficherosexcel/CrearFicherosExcel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPOO/trabajo de programacion leer datos en exel/src/com/ecodeup/ficherosexcel/LeerFicherosExcel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trabajo de programacion leer datos en exel/bin/com/ecodeup/ficherosexcel/CrearFicherosExcel.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trabajo de programacion leer datos en exel/bin/com/ecodeup/ficherosexcel/LeerFicherosExcel.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trabajo de programacion leer datos en exel/src/com/ecodeup/ficherosexcel/CrearFicherosExcel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trabajo de programacion leer datos en exel/src/com/ecodeup/ficherosexcel/LeerFicherosExcel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ProyectoPOO.iml" afterPath="$PROJECT_DIR$/ProyectoPOO.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/Controladores/Controller.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/Modelos/ExportacionExcel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/Modelos/ImportacionDatos.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/Modelos/OfertaAcademica.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/Modelos/SeleccionArchivo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/Vistas/pantallaDos.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/libs/commons-collections4-4.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/libs/mysql-connector-java-5.1.44-bin.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/libs/poi-3.16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/libs/poi-ooxml-3.16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/libs/poi-ooxml-schemas-3.16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoPOO/sample/libs/xmlbeans-2.6.0.jar" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,75 +34,19 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="179">
+              <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExportacionExcel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelos/ExportacionExcel.java">
+      <file leaf-file-name="IngresarController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Controladores/IngresarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="110" column="34" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+            <state relative-caret-position="262">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportacionDatos.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelos/ImportacionDatos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1406#1416#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TipoAula.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Modelos/TipoAula.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-              <folding>
-                <element signature="e#126#127#0" expanded="true" />
-                <element signature="e#155#156#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pantallaDos.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Vistas/pantallaDos.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controladores/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#360#361#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -162,9 +82,9 @@
         <option value="$PROJECT_DIR$/src/sample/Modelos/SeleccionArchivo.java" />
         <option value="$PROJECT_DIR$/src/sample/Modelos/OfertaAcademica.java" />
         <option value="$PROJECT_DIR$/src/sample/Controladores/Controller.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Modelos/ExportacionExcel.java" />
         <option value="$PROJECT_DIR$/src/sample/Modelos/ImportacionDatos.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
       </list>
     </option>
   </component>
@@ -207,6 +127,125 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tareaPaises" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/Vistas/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/Form ok-WF.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/Man-Face.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/Ticket.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/User Settings-02-WF.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/left.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/sample/icons/logo.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -441,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513051465910</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Listo">
+      <created>1513051600348</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513051600348</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -449,12 +495,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32852563" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -480,7 +527,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39872408" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -504,7 +550,8 @@
     <MESSAGE value="ACTUALIZACION DE CONEXION" />
     <MESSAGE value="Agrege un Get para el ArrayList para manipularlo desde otras &#10;&#10;Creacion de nueva clase y metodos, todavia sigue en construccion, no recomiendo actualizar" />
     <MESSAGE value="Ingreso de las clases a la base de datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ingreso de las clases a la base de datos" />
+    <MESSAGE value="Listo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listo" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -523,54 +570,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="37" column="87" lean-forward="false" selection-start-line="37" selection-start-column="87" selection-end-line="37" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelos/ExportacionExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Vistas/pantallaDos.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controladores/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelos/ImportacionDatos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1406#1416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding />
@@ -582,8 +581,8 @@
         <state relative-caret-position="1188">
           <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1406#1416#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1406#1416#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -604,7 +603,7 @@
         <state relative-caret-position="216">
           <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,7 +637,7 @@
         <state relative-caret-position="108">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,7 +691,7 @@
         <state relative-caret-position="108">
           <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,7 +731,7 @@
         <state relative-caret-position="187">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -891,14 +890,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/src/sample/libs/mysql-connector-java-5.1.44-bin.jar!/com/mysql/jdbc/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -906,18 +897,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Modelos/ExportacionExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="110" column="34" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/PackageAndDevelopent/Java/jdk1.8.0_152/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="1768" column="0" lean-forward="false" selection-start-line="1768" selection-start-column="0" selection-end-line="1768" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -926,8 +910,46 @@
         <state relative-caret-position="216">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Vistas/ingresarDatos.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controladores/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Vistas/menu.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelos/ExportacionExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="110" column="34" lean-forward="false" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,9 +958,41 @@
         <state relative-caret-position="252">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1406#1416#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1406#1416#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Modelos/TipoAula.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#126#127#0" expanded="false" />
+            <element signature="e#155#156#0" expanded="false" />
+            <element signature="e#232#233#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#290#291#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#362#363#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controladores/IngresarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
