@@ -39,6 +39,9 @@ public class ImportacionDatos {
 
 
     public int asignarAula(String nombreClase) {
+
+        ArrayList<TipoAula> aulas = new ArrayList<TipoAula>();
+
         int idAula = 1;
         System.gc();
         try {
