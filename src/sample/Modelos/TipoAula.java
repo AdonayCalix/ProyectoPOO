@@ -1,15 +1,15 @@
 package sample.Modelos;
 
 public class TipoAula {
-    private int idTIpo;
+    private int idTipo;
     private String tipo;
 
-    public int getIdTIpo() {
-        return idTIpo;
+    public int getIdTipo() {
+        return idTipo;
     }
 
-    public void setIdTIpo(int idTIpo) {
-        this.idTIpo = idTIpo;
+    public void setIdTipo(int idTIpo) {
+        this.idTipo = idTIpo;
     }
 
     public String getTipo() {
