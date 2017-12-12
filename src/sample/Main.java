@@ -32,6 +32,7 @@ public class Main extends Application {
         primaryStage.setTitle("Asignacion de Aulas");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
+        //hola
         primaryStage.show();
     }
 
