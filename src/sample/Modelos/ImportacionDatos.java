@@ -9,9 +9,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ImportacionDatos {
-    private ArrayList<OfertaAcademica> clases = (ArrayList<OfertaAcademica>) ExportacionExcel.getClases().clone();
+    private static ArrayList<OfertaAcademica> clases = (ArrayList<OfertaAcademica>) ExportacionExcel.getClases().clone();
 
-    private ArrayList<TipoAula> informacionAulas = new ArrayList<TipoAula>();
+    private static ArrayList<TipoAula> informacionAulas = new ArrayList<TipoAula>();
 
     public void insertarClases() {
 
@@ -32,7 +32,7 @@ public class ImportacionDatos {
                     sentencia.setString(1, clases.get(i).getCodigoClase());
                     sentencia.setString(2, clases.get(i).getNombreClase());
                     sentencia.setInt(3, clases.get(i).getCreditos());
-                    sentencia.setInt(4, 0);
+                    sentencia.setInt(4, asignarAulas(nombreClase, codigoClase));
                     sentencia.executeUpdate();
 
                 } catch (SQLException e) {
@@ -60,7 +60,9 @@ public class ImportacionDatos {
         return verificacion;
     }
 
-    public void asignarValores() {
+
+    // Aqui se guardan en un array list los valores de la tabla tipo_aula para evitar hacer muchas conexiones a la DB
+    public static void asignarValores() {
 
         try {
             Connection con = Main.getConexion();
@@ -79,10 +81,29 @@ public class ImportacionDatos {
         }
     }
 
+    public int asignarAulas(String nombreClase, String codigoClase) {
+        int codigoAula = 1;
+
+        for (int i = 0; i < informacionAulas.size(); i++) {
+            Pattern pattern = Pattern.compile(informacionAulas.get(i).getTipo(), Pattern.DOTALL);
+            Matcher matcher = pattern.matcher(nombreClase);
+            if (matcher.find()) {
+                return informacionAulas.get(i).getIdTipo();
+            }
+        }
+
+        if (aulaICC(codigoClase)) {
+            codigoAula = 8;
+        }
+
+        return codigoAula;
+    }
+
+
     public boolean aulaICC(String codigoClase) {
         Pattern pattern = Pattern.compile("^IF");
         Matcher matcher = pattern.matcher(codigoClase);
-        return matcher.matches();
+        return matcher.find();
     }
 
 }
