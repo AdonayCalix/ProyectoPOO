@@ -17,7 +17,7 @@ public class Main extends Application {
 
     public String CONEXION_STRING = "jdbc:mysql://127.0.0.1:3306/proyecto";
     public String USUARIO = "root";
-    public String PASSWORD = "mooseladra";
+    public String PASSWORD = "";
     private static Connection conexion;
 
     public static Connection getConexion() {
@@ -27,10 +27,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         abrirConexion();
-        Parent root = FXMLLoader.load(getClass().getResource("Vistas/pantallaDos.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Vistas/reporte.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Asignacion de Aulas");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        //hola
         primaryStage.show();
     }
 
@@ -40,6 +42,7 @@ public class Main extends Application {
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "La conexion no se realizo exitosamente: " + e.getMessage());
         }
+        JOptionPane.showMessageDialog(null, "Conexion a base de datos exitosa ");
     }
 
     public static void main(String[] args) {
