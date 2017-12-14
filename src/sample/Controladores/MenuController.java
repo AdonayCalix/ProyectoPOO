@@ -34,4 +34,16 @@ public class MenuController {
 
     public void modificarDatos(MouseEvent mouseEvent) {
     }
+
+    public void goTo(MouseEvent mouseEvent) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("../Vistas/Configuracion.fxml"));
+            Scene scene = new Scene(root);
+            Stage anterior = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+            anterior.setScene(scene);
+            anterior.show();
+        } catch (IOException ex) {
+            Logger.getLogger(MenuController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }

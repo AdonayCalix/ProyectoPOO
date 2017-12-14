@@ -5,10 +5,10 @@
 }
 
 .gradient{
-    -fx-background-color: linear-gradient( from 50% 0% to 50% 100%,#31445A,#298DC5);
+    -fx-background-color: linear-gradient(from 50% 0% to 50% 100%, #1A237E, #298DC5);
 }
 .gradient-light{
-    -fx-background-color: linear-gradient( from 50% 0% to 50% 100%,#2F526F,#2C73A0);
+    -fx-background-color: linear-gradient(from 50% 0% to 50% 100%, #1A237E, #2C73A0);
 }
 
 .menus{
