@@ -18,9 +18,8 @@ public class ExportacionExcel {
     private final static int inicioFila = 6;
     private final static int maximoColumna = 16;
 
-    public static void leerDatos() {
+    public static void leerDatos(List<File> archivos) {
 
-        List<File> archivos = SeleccionArchivo.seleccionarArchivos();
         for (int i = 0; i < archivos.size(); i++) {
 
             try {
@@ -106,12 +105,6 @@ public class ExportacionExcel {
                 e.getMessage();
             }
         }
-
-        ImportacionDatos.asignarValores();
-        ImportacionDatos importar = new ImportacionDatos();
-        importar.insertarClases();
-        String nombre = "IF";
-        SugerenciaAula.buscarAulas(nombre);
     }
 
     public static ArrayList<OfertaAcademica> getClases() {

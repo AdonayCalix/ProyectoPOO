@@ -13,8 +13,9 @@ public class ImportacionDatos {
 
     private static ArrayList<TipoAula> informacionAulas = new ArrayList<TipoAula>();
 
-    public void insertarClases() {
+    public boolean insertarClases() {
 
+        boolean confirmacion = true;
         String nombreClase;
         String codigoClase;
 
@@ -37,9 +38,12 @@ public class ImportacionDatos {
 
                 } catch (SQLException e) {
                     e.printStackTrace();
+                    confirmacion = false;
                 }
             }
         }
+
+        return confirmacion;
     }
 
 

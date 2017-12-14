@@ -11,6 +11,12 @@ public class SeleccionArchivo {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("XLSX", "*.xlsx"));
         List<File> archivos = fileChooser.showOpenMultipleDialog(null);
+        if (archivos != null) {
+            for (int i = 0; i < archivos.size(); i++) {
+
+            }
+        }
+
         return archivos;
     }
 }
