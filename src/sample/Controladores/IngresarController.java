@@ -1,18 +1,32 @@
 package sample.Controladores;
 
 import com.jfoenix.controls.JFXButton;
+<<<<<<< Updated upstream
+=======
+import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXDialogLayout;
+>>>>>>> Stashed changes
 import com.jfoenix.controls.JFXListView;
+import com.sun.deploy.uitoolkit.impl.fx.ui.FXMessageDialog;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+<<<<<<< Updated upstream
+=======
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
+>>>>>>> Stashed changes
 import javafx.stage.Stage;
 import sample.Modelos.ExportacionExcel;
 import sample.Modelos.ImportacionDatos;
 import sample.Modelos.SeleccionArchivo;
+import sample.Modelos.SugerenciaAula;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,6 +38,8 @@ public class IngresarController {
     public ImageView imgVolver;
     public JFXButton btbUpload;
     public JFXListView listInformativo;
+    public StackPane rootPane;
+
     public void Volver(MouseEvent mouseEvent) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("../Vistas/menu.fxml"));
@@ -51,5 +67,21 @@ public class IngresarController {
         ImportacionDatos.asignarValores();
         ImportacionDatos importar = new ImportacionDatos();
         importar.insertarClases();
+
+
+
+//        JFXDialogLayout contenido = new JFXDialogLayout();
+//        contenido.setHeading(new Text("Aviso"));
+//        contenido.setBody(new Text("Información ingresada con exito a la base de datos"));
+//        JFXDialog dialog = new JFXDialog(rootPane,contenido,JFXDialog.DialogTransition.CENTER);
+//        JFXButton boton = new JFXButton("Seguir");
+//        boton.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent event) {
+//                dialog.close();
+//            }
+//        });
+//        contenido.setActions(boton);
+//        dialog.show();
     }
 }
