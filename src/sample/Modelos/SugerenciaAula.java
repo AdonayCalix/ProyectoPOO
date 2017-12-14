@@ -17,7 +17,9 @@ public class SugerenciaAula {
         for (int i = 0; i < clases.size(); i++) {
             Pattern pattern = Pattern.compile("^" + codigoFacultad);
             Matcher matcher = pattern.matcher(clases.get(i).getCodigoClase());
+
             if (matcher.find()) {
+                System.out.println("Entre aqui");
 
                 try {
                     Connection con = Main.getConexion();

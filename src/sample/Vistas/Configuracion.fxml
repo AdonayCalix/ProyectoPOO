@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
@@ -12,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="650.0" prefWidth="1100.0" stylesheets="@style.css"
-            xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="sample.Controladores.ConfiguracionController">
     <children>
         <ImageView fx:id="imgBack" fitHeight="57.0" fitWidth="63.0" layoutX="14.0" layoutY="14.0"
@@ -29,24 +30,36 @@
                         <Insets top="10.0"/>
                     </padding>
                     <children>
-                        <JFXTextField fx:id="txtIP" alignment="CENTER" labelFloat="true" maxWidth="443.0"
-                                      minWidth="251.0" prefHeight="37.0" prefWidth="443.0" promptText="Ingresar IP"
-                                      unFocusColor="#5b4141" VBox.vgrow="ALWAYS"/>
-                        <JFXTextField fx:id="txtPuerto" promptText="Ingrese el puerto"/>
-                        <JFXTextField fx:id="txtBD" promptText="Ingrese nombre de la base de datos"/>
-                        <JFXTextField fx:id="txtPass" promptText="Ingresar contraseña bd"/>
+                        <JFXTextField fx:id="txtIP" alignment="CENTER" maxWidth="443.0" minWidth="251.0"
+                                      prefHeight="37.0" prefWidth="443.0" promptText="Ingresar IP"
+                                      unFocusColor="#5b4141" VBox.vgrow="ALWAYS">
+                            <VBox.margin>
+                                <Insets bottom="4.0"/>
+                            </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPuerto" alignment="CENTER" promptText="Ingrese el puerto">
+                            <VBox.margin>
+                                <Insets bottom="4.0"/>
+                            </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtBD" alignment="CENTER" promptText="Ingrese nombre de la base de datos">
+                            <VBox.margin>
+                                <Insets bottom="4.0"/>
+                            </VBox.margin>
+                        </JFXTextField>
+                        <JFXPasswordField alignment="CENTER" promptText="Contraseña"/>
                     </children>
                 </VBox>
-                <JFXButton fx:id="btnGuardar" buttonType="RAISED" layoutX="289.0" layoutY="270.0" onAction="#btnSave"
+                <JFXButton fx:id="btnGuardar" buttonType="RAISED" layoutX="308.0" layoutY="270.0" onAction="#btnSave"
                            prefHeight="33.0" prefWidth="96.0" style="-fx-background-color: rgb(49, 68, 90,0.9);"
                            text="Guardar" textFill="WHITE">
                     <font>
                         <Font name="Roboto Medium" size="14.0"/>
                     </font>
                 </JFXButton>
-                <Label layoutY="-2.0" prefHeight="40.0" prefWidth="536.0"
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-2.0" prefHeight="40.0" prefWidth="536.0"
                        style="-fx-background-color: rgb(0, 110, 160); -fx-background-radius: 4 4 0 0;"
-                       text="Configuración" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" underline="true">
+                       text="Configuración" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
                     <opaqueInsets>
                         <Insets/>
                     </opaqueInsets>
@@ -54,11 +67,11 @@
                         <Insets left="10.0"/>
                     </padding>
                     <font>
-                        <Font name="Roboto Medium" size="21.0"/>
+                        <Font size="21.0"/>
                     </font>
                 </Label>
-                <JFXButton fx:id="btnTest" buttonType="RAISED" layoutX="123.0" layoutY="270.0"
-                           onAction="#probarConexion" prefHeight="33.0" prefWidth="126.0"
+                <JFXButton fx:id="btnTest" buttonType="RAISED" layoutX="102.0" layoutY="270.0"
+                           onAction="#probarConexion" prefHeight="33.0" prefWidth="147.0"
                            style="-fx-background-color: rgb(49, 68, 90,0.9);" text="Probar conexión" textFill="WHITE">
                     <font>
                         <Font name="Roboto Medium" size="14.0"/>

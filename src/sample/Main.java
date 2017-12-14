@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import sample.Modelos.ImportacionDatos;
+import sample.Modelos.SugerenciaAula;
 
 import javax.swing.*;
 import java.sql.Connection;
@@ -26,13 +27,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        abrirConexion();
         Parent root = FXMLLoader.load(getClass().getResource("Vistas/menu.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Asignacion de Aulas");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
-        //hola
         primaryStage.show();
     }
 
