@@ -1,11 +1,8 @@
 package sample.Controladores;
 
 import com.jfoenix.controls.JFXButton;
-<<<<<<< Updated upstream
-=======
 import com.jfoenix.controls.JFXDialog;
 import com.jfoenix.controls.JFXDialogLayout;
->>>>>>> Stashed changes
 import com.jfoenix.controls.JFXListView;
 import com.sun.deploy.uitoolkit.impl.fx.ui.FXMessageDialog;
 import javafx.event.ActionEvent;
@@ -14,14 +11,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-<<<<<<< Updated upstream
-=======
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
->>>>>>> Stashed changes
 import javafx.stage.Stage;
 import sample.Modelos.ExportacionExcel;
 import sample.Modelos.ImportacionDatos;

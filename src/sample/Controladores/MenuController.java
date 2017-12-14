@@ -31,11 +31,7 @@ public class MenuController {
 
     public void asignoAulas(MouseEvent mouseEvent) {
         try {
-<<<<<<< Updated upstream
-            Parent root = FXMLLoader.load(getClass().getResource("../Vistas/asigancionClases.fxml"));
-=======
             Parent root = FXMLLoader.load(getClass().getResource("../Vistas/asignacionClases.fxml"));
->>>>>>> Stashed changes
             Scene scene = new Scene(root);
             Stage anterior = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
             anterior.setScene(scene);
