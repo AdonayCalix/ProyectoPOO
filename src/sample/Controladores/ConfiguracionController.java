@@ -37,4 +37,8 @@ public class ConfiguracionController {
 
     public void btnSave(ActionEvent actionEvent) {
     }
+
+    public void probarConexion(ActionEvent actionEvent) {
+
+    }
 }

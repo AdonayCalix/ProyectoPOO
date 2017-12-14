@@ -37,7 +37,7 @@
                         <JFXTextField fx:id="txtPass" promptText="Ingresar contraseña bd"/>
                     </children>
                 </VBox>
-                <JFXButton fx:id="btnGuardar" buttonType="RAISED" layoutX="210.0" layoutY="270.0" onAction="#btnSave"
+                <JFXButton fx:id="btnGuardar" buttonType="RAISED" layoutX="289.0" layoutY="270.0" onAction="#btnSave"
                            prefHeight="33.0" prefWidth="96.0" style="-fx-background-color: rgb(49, 68, 90,0.9);"
                            text="Guardar" textFill="WHITE">
                     <font>
@@ -57,6 +57,13 @@
                         <Font name="Roboto Medium" size="21.0"/>
                     </font>
                 </Label>
+                <JFXButton fx:id="btnTest" buttonType="RAISED" layoutX="123.0" layoutY="270.0"
+                           onAction="#probarConexion" prefHeight="33.0" prefWidth="126.0"
+                           style="-fx-background-color: rgb(49, 68, 90,0.9);" text="Probar conexión" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto Medium" size="14.0"/>
+                    </font>
+                </JFXButton>
             </children>
         </AnchorPane>
     </children>

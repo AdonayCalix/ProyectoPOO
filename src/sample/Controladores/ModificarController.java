@@ -18,6 +18,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sample.Main;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -35,6 +36,7 @@ public class ModificarController {
     private ObservableList listaClase = FXCollections.observableArrayList();
 
     private String claseSeleccionada;
+    private String cambioAula;
 
     public void Volver(MouseEvent mouseEvent) {
         try {
@@ -49,6 +51,27 @@ public class ModificarController {
     }
 
     public void guardarCambio(ActionEvent actionEvent) {
+        cambioAula = txtAula.getText();
+        int opcion = actualizarRegistro(cambioAula, claseSeleccionada);
+        if (opcion != 0) {
+            JOptionPane.showMessageDialog(null, "Registro Actualizado");
+        }
+
+    }
+
+    public static int actualizarRegistro(String aula, String claseSeleccionada) {
+        int resultado = 0;
+        String bandera = "";
+
+        try {
+            Connection con = Main.getConexion();
+            Statement stmt = con.createStatement();
+            String sql = "UPDATE seccion SET IdAula=" + aula + " WHERE IdClase = (SELECT IdClase FROM clase WHERE nomClase='" + claseSeleccionada + "')";
+            resultado = stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return resultado;
     }
 
     @FXML
@@ -58,7 +81,6 @@ public class ModificarController {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 claseSeleccionada = newValue;
-                listaClase.clear();
                 try {
                     Connection con = Main.getConexion();
                     Statement stmt = con.createStatement();
@@ -68,7 +90,7 @@ public class ModificarController {
                         txtAula.setText(resultado.getString("IdAula"));
                     }
                 } catch (SQLException e) {
-                    e.printStackTrace();
+                    System.out.println(e.getMessage());
                 }
 
             }
@@ -82,7 +104,7 @@ public class ModificarController {
             try {
                 Connection con = Main.getConexion();
                 Statement stmt = con.createStatement();
-                String sql = "SELECT nomClase FROM clase WHERE nomClase LIKE'" + busqueda + "'";
+                String sql = "SELECT nomClase FROM clase WHERE nomClase LIKE'" + busqueda + "%'";
                 ResultSet resultSet = stmt.executeQuery(sql);
                 while (resultSet.next()) {
                     listaClase.add(resultSet.getString("nomClase"));
@@ -94,4 +116,6 @@ public class ModificarController {
 
         }
     }
+
+
 }
