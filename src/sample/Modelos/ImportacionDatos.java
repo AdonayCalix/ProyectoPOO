@@ -46,7 +46,6 @@ public class ImportacionDatos {
         return confirmacion;
     }
 
-
     public boolean comprobarClasesExistente(String codigoClase) {
         boolean verificacion = false;
         try {
@@ -95,14 +94,11 @@ public class ImportacionDatos {
                 return informacionAulas.get(i).getIdTipo();
             }
         }
-
         if (aulaICC(codigoClase)) {
             codigoAula = 8;
         }
-
         return codigoAula;
     }
-
 
     public boolean aulaICC(String codigoClase) {
         Pattern pattern = Pattern.compile("^IF");

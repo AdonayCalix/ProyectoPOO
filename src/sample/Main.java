@@ -5,8 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import sample.Modelos.ImportacionDatos;
-import sample.Modelos.SugerenciaAula;
 
 import javax.swing.*;
 import java.sql.Connection;
