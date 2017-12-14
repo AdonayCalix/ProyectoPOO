@@ -42,7 +42,6 @@ public class Main extends Application {
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "La conexion no se realizo exitosamente: " + e.getMessage());
         }
-        JOptionPane.showMessageDialog(null, "Conexion a base de datos exitosa ");
     }
 
     public static void main(String[] args) {

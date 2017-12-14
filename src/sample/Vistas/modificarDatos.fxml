@@ -52,8 +52,6 @@
                                                               onKeyReleased="#buscarClase" promptText="nombre clase"/>
                                                 <Label layoutX="14.0" layoutY="36.0"
                                                        text="Ingresar el nombre de la clase:"/>
-                                                <JFXListView fx:id="lvClases" layoutX="24.0" layoutY="80.0"
-                                                             prefHeight="317.0" prefWidth="182.0"/>
                                                 <JFXButton fx:id="btnGuardar" buttonType="RAISED" layoutX="260.0"
                                                            layoutY="397.0" onAction="#guardarCambio" prefHeight="22.0"
                                                            prefWidth="92.0" style="-fx-background-color: #00AACF;"
@@ -62,8 +60,11 @@
                                                         <Font name="Roboto Medium" size="14.0"/>
                                                     </font>
                                                 </JFXButton>
-                                                <JFXTextField fx:id="txtAula" layoutX="213.0" layoutY="87.0"
+                                                <JFXTextField fx:id="txtAula" layoutX="315.0" layoutY="87.0"
                                                               promptText="Aula"/>
+                                                <JFXListView fx:id="lvClases" layoutX="12.0" layoutY="72.0"
+                                                             prefHeight="320.0" prefWidth="208.0"/>
+                                                <Label layoutX="238.0" layoutY="95.0" text="Num. Aula: "/>
                                             </children>
                                         </AnchorPane>
                                     </children>
