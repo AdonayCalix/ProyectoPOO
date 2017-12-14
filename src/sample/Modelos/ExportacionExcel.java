@@ -107,8 +107,11 @@ public class ExportacionExcel {
             }
         }
 
+        ImportacionDatos.asignarValores();
         ImportacionDatos importar = new ImportacionDatos();
         importar.insertarClases();
+        String nombre = "IF";
+        SugerenciaAula.buscarAulas(nombre);
     }
 
     public static ArrayList<OfertaAcademica> getClases() {
