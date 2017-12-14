@@ -15,16 +15,18 @@
     <children>
         <AnchorPane prefHeight="601.0" prefWidth="996.0">
             <children>
-                <AnchorPane layoutX="-3.0" layoutY="-6.0" prefHeight="142.0" prefWidth="1105.0" styleClass="gradient-light">
+                <AnchorPane layoutX="-3.0" layoutY="-6.0" prefHeight="144.0" prefWidth="1100.0"
+                            styleClass="gradient-light">
                     <children>
                         <ImageView fx:id="imgVolver" fitHeight="35.0" fitWidth="42.0" layoutX="8.0" layoutY="5.0" onMouseClicked="#Volver" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../icons/left.png" />
                             </image>
                         </ImageView>
-                        <ImageView fx:id="imgBus" fitHeight="69.0" fitWidth="74.0" layoutX="175.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imgBus" fitHeight="114.0" fitWidth="244.0" layoutX="431.0" layoutY="19.0"
+                                   pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../icons/logo.png" />
+                                <Image url="@../icons/logoU2.png"/>
                             </image>
                         </ImageView>
                     </children>
@@ -37,8 +39,8 @@
                                     <children>
                                         <HBox layoutX="36.0" layoutY="22.0" prefHeight="440.0" prefWidth="1023.0" spacing="40.0">
                                             <children>
-                                                <AnchorPane prefHeight="440.0" prefWidth="580.0" styleClass="card" />
-                                                <AnchorPane prefHeight="440.0" prefWidth="332.0" style="-fx-background-color: #F0F0F0;" styleClass="card">
+                                                <AnchorPane prefHeight="440.0" prefWidth="343.0"
+                                                            style="-fx-background-color: #F0F0F0;" styleClass="card">
                                                     <children>
                                                         <JFXButton fx:id="btbUpload" buttonType="RAISED" layoutX="180.0" layoutY="354.0" onAction="#escogerArchivos" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #00AACF;" text="Cargar Archivos" textFill="WHITE">
                                                             <font>

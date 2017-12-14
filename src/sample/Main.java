@@ -27,7 +27,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         abrirConexion();
-        Parent root = FXMLLoader.load(getClass().getResource("Vistas/reporte.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Vistas/menu.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Asignacion de Aulas");
         primaryStage.setScene(scene);
