@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 
 public class SugerenciaAula {
     private static ArrayList<Aula> aulasRecomendadas = new ArrayList<Aula>();
+
     private static ArrayList<OfertaAcademica> clases = (ArrayList<OfertaAcademica>) ExportacionExcel.getClases().clone();
 
    /* public static void buscarAulas(String codigoFacultad) {
