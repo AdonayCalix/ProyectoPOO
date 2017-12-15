@@ -17,6 +17,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sample.Main;
+import sample.Modelos.ExportacionExcel;
+import sample.Modelos.OfertaAcademica;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -24,18 +26,25 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ModificarController {
     public JFXTextField txtNombre;
     public JFXListView<String> lvClases;
     public JFXButton btnGuardar;
     public JFXTextField txtAula;
+    public JFXListView lvaulas;
 
     private ObservableList listaClase = FXCollections.observableArrayList();
+    private ObservableList listaAulas = FXCollections.observableArrayList();
+    private static ArrayList<OfertaAcademica> clases = (ArrayList<OfertaAcademica>) ExportacionExcel.getClases().clone();
 
     private String claseSeleccionada;
+    private String aulasSeleccionada;
     private String cambioAula;
 
     public void Volver(MouseEvent mouseEvent) {
@@ -77,6 +86,7 @@ public class ModificarController {
     @FXML
     public void initialize() {
         lvClases.setItems(listaClase);
+        lvaulas.setItems(listaAulas);
         lvClases.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -89,12 +99,18 @@ public class ModificarController {
                     while (resultado.next()) {
                         txtAula.setText(resultado.getString("IdAula"));
                     }
+
+
                 } catch (SQLException e) {
                     System.out.println(e.getMessage());
                 }
             }
         });
+
+
+
     }
+
 
     public void buscarClase(KeyEvent keyEvent) {
         listaClase.clear();
