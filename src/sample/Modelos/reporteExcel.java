@@ -26,7 +26,7 @@ public class reporteExcel {
     private String db = "proyecto";
     private String user = "root";
     private String password = "";
-    private String hoja = "Ciudades";
+    private String hoja = "Secciones";
     private String carpeta = "Ficheros-Excel";
     private String documnto = "output.xls";
 
